@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ConsoleApp1/ConsoleApp1.csproj" />
+  <Project Path="Setup1/Setup1.vdproj" Type="Installer">
+    <Build />
+  </Project>
+</Solution>
