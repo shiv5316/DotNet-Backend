@@ -1,0 +1,33 @@
+﻿@model List<StudentCRUDMVC.Models.Student>
+
+<h2>Student CRUD Operation</h2>
+
+<form method="post" action="/Student/Create">
+    Name: <input type="text" name="Name" required />
+    Age: <input type="number" name="Age" required />
+    Marks: <input type="number" name="Marks" required />
+    <input type="submit" value="Add Student" />
+</form>
+
+<br />
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Marks</th>
+        <th>Delete</th>
+    </tr>
+
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>@s.Name</td>
+            <td>@s.Age</td>
+            <td>@s.Marks</td>
+            <td>
+                <a href="/Student/Delete/@s.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
