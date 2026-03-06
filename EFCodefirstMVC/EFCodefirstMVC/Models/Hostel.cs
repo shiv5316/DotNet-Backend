@@ -9,6 +9,6 @@ namespace EFCodefirstMVC.Models
         public string Address { get; set; }
 
         // Navigation property: one hostel can have many students
-        public ICollection<Student> Students { get; set; }
+        public ICollection<Student> Students { get; set; } = new List<Student>();
     }
 }

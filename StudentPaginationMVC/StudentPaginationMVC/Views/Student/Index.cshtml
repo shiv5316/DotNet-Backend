@@ -1,0 +1,28 @@
+﻿@model List<StudentPaginationMVC.Models.Student>
+
+<h2>Student List</h2>
+
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>Department</th>
+    </tr>
+
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>@s.Id</td>
+            <td>@s.Name</td>
+            <td>@s.Marks</td>
+            <td>@s.Department</td>
+        </tr>
+    }
+
+</table>
+
+<br />
+
+<a href="/Student/Index?page=@(ViewBag.Page - 1)">Previous</a>
+<a href="/Student/Index?page=@(ViewBag.Page + 1)">Next</a>
