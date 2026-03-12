@@ -1,0 +1,6 @@
+@WebAPI_DTO_HostAddress = http://localhost:5196
+
+GET {{WebAPI_DTO_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

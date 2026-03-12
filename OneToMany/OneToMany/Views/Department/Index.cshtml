@@ -1,0 +1,21 @@
+﻿@model IEnumerable<OneToMany.Models.Department>
+
+<h2>Departments</h2>
+
+<a href="/Department/Create">Add Department</a>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+
+    @foreach (var d in Model)
+    {
+        <tr>
+            <td>@d.DeptId</td>
+            <td>@d.DeptName</td>
+        </tr>
+    }
+
+</table>

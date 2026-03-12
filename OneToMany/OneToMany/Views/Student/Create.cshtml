@@ -1,0 +1,19 @@
+﻿@model OneToMany.Models.Student
+
+<form asp-action="Create">
+
+<div>
+<label>Student Name</label>
+<input asp-for="StudentName" />
+</div>
+
+<div>
+<label>Department</label>
+<select asp-for="DeptId" asp-items="ViewBag.Departments">
+<option value="">Select Department</option>
+</select>
+</div>
+
+<button type="submit">Save</button>
+
+</form>
