@@ -1,0 +1,6 @@
+@TrimMiddlewareDemo_HostAddress = http://localhost:5139
+
+GET {{TrimMiddlewareDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
